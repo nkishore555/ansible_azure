@@ -1,0 +1,13 @@
+---
+pool:
+  name: "Default"
+
+trigger:
+  - main
+
+steps:
+
+- script: |
+    ansible-playbook -i hosts azure.yml
+  workingDirectory: /home/kishore
+  displayName: my palybook to install java
